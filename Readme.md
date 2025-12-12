@@ -1,5 +1,7 @@
 # Patriot Thanks
 
+> **📌 Evolution**: This is the advanced .NET II version. For the original Windows Forms version, see: [PatriotThanks-WindowsForms](https://github.com/DocBear71/PatriotThanks-WindowsForms)
+
 A WPF desktop application designed to help veterans, active-duty military personnel, first responders, and their families discover local businesses offering special incentives and discounts.
 
 ## 📋 Project Overview
