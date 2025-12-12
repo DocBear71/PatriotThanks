@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- High Contrast Theme for Patriot Thanks -->
+    <!-- Designed for accessibility with maximum contrast -->
+
+    <!-- Primary Colors -->
+    <SolidColorBrush x:Key="PrimaryBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="SecondaryBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="TertiaryBackground" Color="#1A1A1A"/>
+
+    <!-- Text Colors -->
+    <SolidColorBrush x:Key="PrimaryText" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="SecondaryText" Color="#FFFF00"/>
+    <SolidColorBrush x:Key="DisabledText" Color="#808080"/>
+
+    <!-- Accent Colors -->
+    <SolidColorBrush x:Key="AccentColor" Color="#00FFFF"/>
+    <SolidColorBrush x:Key="AccentColorHover" Color="#00CCCC"/>
+    <SolidColorBrush x:Key="SuccessColor" Color="#00FF00"/>
+    <SolidColorBrush x:Key="WarningColor" Color="#FFFF00"/>
+    <SolidColorBrush x:Key="DangerColor" Color="#FF0000"/>
+
+    <!-- Border Colors -->
+    <SolidColorBrush x:Key="BorderColor" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="BorderColorFocus" Color="#00FFFF"/>
+
+    <!-- Control Backgrounds -->
+    <SolidColorBrush x:Key="ControlBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="ControlBackgroundHover" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="ControlBackgroundPressed" Color="#333333"/>
+
+    <!-- Menu Colors -->
+    <SolidColorBrush x:Key="MenuBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="MenuForeground" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="MenuHighlight" Color="#00FFFF"/>
+
+    <!-- DataGrid Colors -->
+    <SolidColorBrush x:Key="DataGridBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="DataGridAlternateRow" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="DataGridHeader" Color="#000000"/>
+    <SolidColorBrush x:Key="DataGridHeaderText" Color="#FFFF00"/>
+    <SolidColorBrush x:Key="DataGridSelectedRow" Color="#00FFFF"/>
+    <SolidColorBrush x:Key="DataGridSelectedRowText" Color="#000000"/>
+    <SolidColorBrush x:Key="DataGridBorder" Color="#FFFFFF"/>
+
+    <!-- TabControl Colors -->
+    <SolidColorBrush x:Key="TabBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="TabSelectedBackground" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="TabUnselectedBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="TabBorder" Color="#FFFFFF"/>
+
+    <!-- Button Colors -->
+    <SolidColorBrush x:Key="ButtonBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="ButtonForeground" Color="#00FFFF"/>
+    <SolidColorBrush x:Key="ButtonBackgroundHover" Color="#1A1A1A"/>
+    <SolidColorBrush x:Key="ButtonBorder" Color="#00FFFF"/>
+
+    <!-- StatusBar Colors -->
+    <SolidColorBrush x:Key="StatusBarBackground" Color="#000000"/>
+    <SolidColorBrush x:Key="StatusBarForeground" Color="#FFFFFF"/>
+
+    <!-- GroupBox Colors -->
+    <SolidColorBrush x:Key="GroupBoxBorder" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="GroupBoxHeader" Color="#FFFF00"/>
+
+</ResourceDictionary>

@@ -1,0 +1,91 @@
+﻿<Window x:Class="WpfPresentation.AddEditUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        Title="AddEditUserWindow" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto" MinHeight="35"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lblTitle" Grid.Row="0" Grid.ColumnSpan="2"
+                HorizontalAlignment="Center" FontFamily="Calibri"
+               VerticalContentAlignment="Bottom" FontSize="24"
+               >Add a New User</Label>
+
+        <Label Grid.Row="1" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">Title:</Label>
+        <ComboBox x:Name="cmbTitle" Grid.Row="1" Grid.Column="1" Margin="10 5 50 5" 
+                  VerticalContentAlignment="Center"/>
+
+        <Label Grid.Row="2" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">First Name:</Label>
+        <TextBox x:Name="txtFirstName" Grid.Row="2" Grid.Column="1" Margin="10 5 50 5" 
+                 VerticalContentAlignment="Center" GotFocus="textBox_GotFocus"/>
+
+        <Label Grid.Row="3" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">Last Name:</Label>
+        <TextBox x:Name="txtLastName" Grid.Row="3" Grid.Column="1" Margin="10 5 50 5" 
+                 VerticalContentAlignment="Center" GotFocus="textBox_GotFocus"/>
+
+        <Label Grid.Row="4" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">Email Address:</Label>
+        <TextBox x:Name="txtEmail" Grid.Row="4" Grid.Column="1" Margin="10 5 50 5" 
+                 VerticalContentAlignment="Center" GotFocus="textBox_GotFocus"/>
+
+        <Label Grid.Row="5" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">Status:</Label>
+        <ComboBox x:Name="cmbStatus" Grid.Row="5" Grid.Column="1" Margin="10 5 50 5" 
+                  VerticalContentAlignment="Center"/>
+
+        <Label Grid.Row="6" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">Account Status:</Label>
+        <ComboBox x:Name="cmbAccountStatus" Grid.Row="6" Grid.Column="1" Margin="10 5 50 5" 
+                  VerticalContentAlignment="Center"/>
+
+        <Label Grid.Row="7" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0">Membership Level:</Label>
+        <ComboBox x:Name="cmbMemLevel" Grid.Row="7" Grid.Column="1" Margin="10 5 50 5" 
+                  VerticalContentAlignment="Center"/>
+
+        <Label x:Name="lblActive" Grid.Row="8" VerticalContentAlignment="Center"
+               HorizontalAlignment="Right" Padding="20 0" Visibility="Collapsed">Active:</Label>
+        <CheckBox x:Name="chkActive" Grid.Row="8" Grid.Column="1" Margin="10 5 50 5" 
+                  VerticalContentAlignment="Center" Visibility="Collapsed"/>
+
+        <!-- Account Locked Status - Only visible in Edit/View mode -->
+        <Label x:Name="lblAccountLocked" Grid.Row="8" VerticalContentAlignment="Center"
+       HorizontalAlignment="Right" Padding="20 0" Visibility="Collapsed">Account Locked:</Label>
+        <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal" 
+            VerticalAlignment="Center" Margin="10 5 20 5">
+            <CheckBox x:Name="chkAccountLocked" VerticalAlignment="Center" 
+              Visibility="Collapsed" Click="chkAccountLocked_Click"/>
+            <TextBlock x:Name="txtLockStatus" Margin="10 0 0 0" VerticalAlignment="Center"
+               Visibility="Collapsed" FontStyle="Italic" TextWrapping="Wrap" MaxWidth="200"/>
+        </StackPanel>
+
+        <Button x:Name="btnAction" Grid.Row="9" HorizontalAlignment="Right"
+                Margin="5" Width="100" FontSize="15" Click="btnAction_Click">Save</Button>
+        <Button x:Name="btnCancel" Grid.Row="9" Grid.Column="1"
+                HorizontalAlignment="Left"
+                Margin="5" Width="100" FontSize="15" Click="btnCancel_Click">Cancel</Button>
+    </Grid>
+</Window>

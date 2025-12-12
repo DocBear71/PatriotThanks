@@ -1,0 +1,167 @@
+﻿<Window x:Class="WpfPresentation.DonationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        Title="Support Patriot Thanks" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        Height="550" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#e74c3c" Padding="20">
+            <StackPanel>
+                <emoji:TextBlock Text="⭐ Support Patriot Thanks ⭐" 
+                                 FontSize="24" FontWeight="Bold" 
+                                 Foreground="White" 
+                                 HorizontalAlignment="Center"/>
+                <TextBlock Text="Help us continue serving those who serve" 
+                           FontSize="13" Foreground="#fadbd8"
+                           HorizontalAlignment="Center" Margin="0,8,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Content -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="25">
+            <StackPanel>
+                <!-- Mission Banner -->
+                <Border Background="#e8f5e8" BorderBrush="#28a745" BorderThickness="2" 
+                        CornerRadius="5" Padding="15" Margin="0,0,0,20">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" Foreground="#155724">
+                        <Run FontWeight="Bold">Your generosity makes a difference!</Run>
+                        <LineBreak/>
+                        <Run>Donations help us maintain and expand our platform, connecting more veterans, military members, and first responders with appreciative businesses.</Run>
+                    </TextBlock>
+                </Border>
+
+                <!-- Why Donate Section -->
+                <TextBlock Text="Why Support Patriot Thanks?" FontSize="16" FontWeight="Bold" 
+                           Foreground="#2c3e50" Margin="0,0,0,10"/>
+
+                <StackPanel Margin="10,0,0,20">
+                    <emoji:TextBlock Text="✅ Keep the Platform Free: Help us continue providing free access to service members and their families." 
+                                     Margin="0,0,0,8" TextWrapping="Wrap"/>
+                    <emoji:TextBlock Text="✅ Expand Coverage: Enable us to add more businesses and reach more communities across the United States." 
+                                     Margin="0,0,0,8" TextWrapping="Wrap"/>
+                    <emoji:TextBlock Text="✅ Improve Features: Fund development of new features like mobile apps and verification systems." 
+                                     Margin="0,0,0,8" TextWrapping="Wrap"/>
+                    <emoji:TextBlock Text="✅ Support Outreach: Help us spread the word to businesses who want to show their appreciation." 
+                                     TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Donation Options -->
+                <TextBlock Text="Donation Options" FontSize="16" FontWeight="Bold" 
+                           Foreground="#2c3e50" Margin="0,0,0,15"/>
+
+                <!-- One-Time Donation -->
+                <Border Background="#f8f9fa" BorderBrush="#dee2e6" BorderThickness="1" 
+                        CornerRadius="8" Padding="15" Margin="0,0,0,15">
+                    <StackPanel>
+                        <emoji:TextBlock Text="💳 One-Time Donation" FontWeight="Bold" FontSize="14" 
+                                         Foreground="#495057" Margin="0,0,0,8"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="#6c757d" Margin="0,0,0,10">
+                            Make a single contribution of any amount. Every dollar helps us serve those who serve.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Border Background="#28a745" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$10" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                            <Border Background="#28a745" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$25" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                            <Border Background="#28a745" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$50" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                            <Border Background="#28a745" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$100" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                            <Border Background="#17a2b8" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="Custom" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Monthly Donation -->
+                <Border Background="#fff3cd" BorderBrush="#ffc107" BorderThickness="1" 
+                        CornerRadius="8" Padding="15" Margin="0,0,0,15">
+                    <StackPanel>
+                        <emoji:TextBlock Text="⚡ Monthly Support" FontWeight="Bold" FontSize="14" 
+                                         Foreground="#856404" Margin="0,0,0,8"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="#856404" Margin="0,0,0,10">
+                            Become a sustaining supporter with a monthly recurring donation. Cancel anytime.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Border Background="#856404" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$5/mo" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                            <Border Background="#856404" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$10/mo" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                            <Border Background="#856404" CornerRadius="5" Padding="10,5" Margin="5">
+                                <TextBlock Text="$25/mo" Foreground="White" FontWeight="Bold"/>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!-- Corporate Sponsorship -->
+                <Border Background="#d1ecf1" BorderBrush="#17a2b8" BorderThickness="1" 
+                        CornerRadius="8" Padding="15" Margin="0,0,0,20">
+                    <StackPanel>
+                        <emoji:TextBlock Text="🏢 Corporate Sponsorship" FontWeight="Bold" FontSize="14" 
+                                         Foreground="#0c5460" Margin="0,0,0,8"/>
+                        <TextBlock TextWrapping="Wrap" Foreground="#0c5460">
+                            Businesses interested in sponsoring Patriot Thanks can contact us at privacy@patriotthanks.com for partnership opportunities and recognition benefits.
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+
+                <!-- Tax Information -->
+                <Border Background="#f8f9fa" Padding="10" CornerRadius="5" Margin="0,0,0,15">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontSize="11" Foreground="#6c757d">
+                        <Run FontWeight="SemiBold">Note:</Run>
+                        <Run> Doc Bear Enterprises, LLC is a for-profit company. Donations are not tax-deductible as charitable contributions. Your support directly funds platform development and maintenance.</Run>
+                    </TextBlock>
+                </Border>
+
+                <!-- Donate Button -->
+                <Button x:Name="btnDonateOnline" Height="45" 
+                        Background="#e74c3c" Foreground="White" 
+                        FontSize="16" FontWeight="Bold"
+                        Cursor="Hand"
+                        Click="btnDonateOnline_Click">
+                    <emoji:TextBlock Text="🔗 Donate Online at PatriotThanks.com" VerticalAlignment="Center" Foreground="White"/>
+                </Button>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer -->
+        <Border Grid.Row="2" Background="#f0f0f0" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock Text="Questions? Contact us:" FontSize="11" Foreground="#666666"/>
+                    <TextBlock Text="privacy@patriotthanks.com" FontSize="11" Foreground="#e74c3c"/>
+                </StackPanel>
+
+                <Button x:Name="btnClose" Grid.Column="1" Content="Close" 
+                        Width="80" Height="30"
+                        Click="btnClose_Click"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

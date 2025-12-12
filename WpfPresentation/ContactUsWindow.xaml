@@ -1,0 +1,131 @@
+﻿<Window x:Class="WpfPresentation.ContactUsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        Title="Contact Us - Patriot Thanks" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize"
+        Height="650" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#17a2b8" Padding="15">
+            <StackPanel>
+                <TextBlock Text="Contact Us" 
+                           FontSize="24" FontWeight="Bold" 
+                           Foreground="White" 
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="We'd love to hear from you!" 
+                           FontSize="12" Foreground="#d1ecf1"
+                           HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Form Content -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="25">
+            <StackPanel>
+                <!-- Mission Statement -->
+                <Border Background="#e8f5e8" BorderBrush="#28a745" BorderThickness="1" 
+                        CornerRadius="5" Padding="10" Margin="0,0,0,20">
+                    <TextBlock Text="Connecting veterans, active-duty military, and first responders with businesses that appreciate their service."
+                               TextWrapping="Wrap" TextAlignment="Center" Foreground="#155724" FontSize="12"/>
+                </Border>
+
+                <!-- First Name -->
+                <Label Content="First Name" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <TextBox x:Name="txtFirstName" Padding="8" Margin="0,0,0,15"
+                         MaxLength="50"/>
+
+                <!-- Last Name -->
+                <Label Content="Last Name" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <TextBox x:Name="txtLastName" Padding="8" Margin="0,0,0,15"
+                         MaxLength="50"/>
+
+                <!-- Email -->
+                <Label Content="Email Address *" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <TextBox x:Name="txtEmail" Padding="8" Margin="0,0,0,15"
+                         MaxLength="100"/>
+
+                <!-- Category (Required by API) -->
+                <Label Content="Category *" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <ComboBox x:Name="cboCategory" Padding="8" Margin="0,0,0,15">
+                    <ComboBoxItem Content="General Inquiry" Tag="general-inquiry"/>
+                    <ComboBoxItem Content="Business Registration" Tag="business-registration"/>
+                    <ComboBoxItem Content="Technical Support" Tag="technical-support"/>
+                    <ComboBoxItem Content="Account Issues" Tag="account-issues"/>
+                    <ComboBoxItem Content="Verification Help" Tag="verification-help"/>
+                    <ComboBoxItem Content="Report an Issue" Tag="report-issue"/>
+                    <ComboBoxItem Content="Feedback/Suggestions" Tag="feedback"/>
+                    <ComboBoxItem Content="Partnership Opportunity" Tag="partnership"/>
+                    <ComboBoxItem Content="Media/Press Inquiry" Tag="media-inquiry"/>
+                    <ComboBoxItem Content="Other" Tag="other"/>
+                </ComboBox>
+
+                <!-- Subject -->
+                <Label Content="Subject *" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <TextBox x:Name="txtSubject" Padding="8" Margin="0,0,0,15"
+                         MaxLength="200"/>
+
+                <!-- Urgency -->
+                <Label Content="Urgency" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <ComboBox x:Name="cboUrgency" Padding="8" Margin="0,0,0,15" SelectedIndex="2">
+                    <ComboBoxItem Content="Urgent (2-4 hours)" Tag="urgent"/>
+                    <ComboBoxItem Content="High (4-8 hours)" Tag="high"/>
+                    <ComboBoxItem Content="Normal (1-2 business days)" Tag="normal"/>
+                    <ComboBoxItem Content="Low (2-3 business days)" Tag="low"/>
+                </ComboBox>
+
+                <!-- Message -->
+                <Label Content="Message *" FontWeight="SemiBold" Margin="0,0,0,3"/>
+                <TextBox x:Name="txtMessage" Padding="8" Margin="0,0,0,15"
+                         TextWrapping="Wrap" AcceptsReturn="True"
+                         Height="100" VerticalScrollBarVisibility="Auto"
+                         MaxLength="2000"/>
+
+                <!-- Character Count -->
+                <TextBlock x:Name="lblCharCount" Text="0/2000 characters" 
+                           HorizontalAlignment="Right" Foreground="#666666" FontSize="11"
+                           Margin="0,-10,0,15"/>
+
+                <!-- Status Message -->
+                <TextBlock x:Name="lblStatus" TextWrapping="Wrap" 
+                           HorizontalAlignment="Center" Margin="0,0,0,10"
+                           Visibility="Collapsed"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer with Buttons -->
+        <Border Grid.Row="2" Background="#f0f0f0" Padding="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Contact Info -->
+                <StackPanel Grid.Column="0" VerticalAlignment="Center">
+                    <TextBlock Text="Or reach us directly:" FontSize="11" Foreground="#666666"/>
+                    <TextBlock Text="privacy@patriotthanks.com" FontSize="11" Foreground="#17a2b8"/>
+                </StackPanel>
+
+                <!-- Buttons -->
+                <Button x:Name="btnSubmit" Grid.Column="1" Content="Send Message" 
+                        Width="120" Height="35" Margin="0,0,10,0"
+                        Background="#28a745" Foreground="White" FontWeight="Bold"
+                        Click="btnSubmit_Click"/>
+                <Button x:Name="btnCancel" Grid.Column="2" Content="Cancel" 
+                        Width="80" Height="35"
+                        Click="btnCancel_Click"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

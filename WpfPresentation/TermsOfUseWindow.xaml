@@ -1,0 +1,263 @@
+﻿<Window x:Class="WpfPresentation.TermsOfUseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        Title="Terms of Use - Patriot Thanks" 
+        WindowStartupLocation="CenterScreen" 
+        Height="650" Width="850"
+        MinHeight="450" MinWidth="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#2c3e50" Padding="15">
+            <StackPanel>
+                <TextBlock Text="TERMS OF USE" 
+                           FontSize="24" FontWeight="Bold" 
+                           Foreground="White" 
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Last updated August 15, 2025" 
+                           FontSize="12" Foreground="#bdc3c7" 
+                           HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Scrollable Content -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="20">
+            <StackPanel>
+                <!-- Mission Banner -->
+                <Border Background="#e8f5e8" BorderBrush="#28a745" BorderThickness="2" 
+                        CornerRadius="5" Padding="15" Margin="0,0,0,20">
+                    <TextBlock Text="★ USA ★ Connecting veterans, active-duty military, first responders, and their families with local businesses that appreciate their service across the United States."
+                               FontWeight="Bold" Foreground="#155724" TextWrapping="Wrap"/>
+                </Border>
+
+                <!-- Agreement Section -->
+                <TextBlock Text="AGREEMENT TO OUR LEGAL TERMS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,15">
+                    <Run>We are Doc Bear Enterprises, LLC. ("Company," "we," "us," or "our"). We operate </Run>
+                    <Run FontWeight="Bold">https://www.patriotthanks.com</Run>
+                    <Run> (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services"). You can contact us by email at privacy@patriotthanks.com or by mail to 5249 N Park Pl NE, PMB 4011, Cedar Rapids, IA, 52402.</Run>
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Doc Bear Enterprises, LLC., concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+                </TextBlock>
+
+                <!-- Section 1 -->
+                <TextBlock Text="1. OUR SERVICES" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    Our Services provide a platform to connect veterans, active-duty military personnel, first responders, and their families with local businesses that offer discounts and incentives in appreciation of their service. The information provided when using the Services is intended for distribution and use within the United States only.
+                </TextBlock>
+
+                <!-- Section 2 -->
+                <TextBlock Text="2. INTELLECTUAL PROPERTY RIGHTS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Our intellectual property" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                    We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the "Content"), as well as the trademarks, service marks, and logos contained therein (the "Marks").
+                </TextBlock>
+                <TextBlock Text="Your use of our Services" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    Subject to your compliance with these Legal Terms, we grant you a non-exclusive, non-transferable, revocable license to access the Services and download or print a copy of any portion of the Content to which you have properly gained access, solely for your personal, non-commercial use.
+                </TextBlock>
+
+                <!-- Section 3 -->
+                <TextBlock Text="3. USER REPRESENTATIONS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">By using the Services, you represent and warrant that:</TextBlock>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• You have the legal capacity and agree to comply with these Legal Terms" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• If between 13-17 years of age, you have obtained verifiable parental or guardian consent" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• If under 13 years of age, you may not use the Services" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• You will provide accurate military service or first responder information for verification" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• You will not misrepresent your military service, first responder status, or family relationship" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• You will not use the Services for any illegal or unauthorized purpose" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 4 -->
+                <TextBlock Text="4. PROHIBITED ACTIVITIES" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                    You may not access or use the Services for any purpose other than that for which we make the Services available. Prohibited activities include:
+                </TextBlock>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Misrepresenting military service or first responder status to gain unauthorized access to discounts" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Sharing or transferring discount eligibility to non-eligible individuals" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Abusing or exploiting verification systems through fraudulent documentation" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Creating fake reviews or testimonials about businesses" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Systematically retrieving data to create competing platforms" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Circumventing security-related features of the Services" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Using information from the Services to harass, abuse, or harm another person" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 5 -->
+                <TextBlock Text="5. MILITARY AND FIRST RESPONDER VERIFICATION" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Verification Requirements:" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,10">
+                    <TextBlock Text="• Military Personnel: Must provide military ID or official documentation" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Veterans: Must provide DD-214, veteran ID card, or other proof of service" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• First Responders: Must provide employment verification, department ID, or credentials" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Family Members: Must provide proof of relationship to verified service member" TextWrapping="Wrap"/>
+                </StackPanel>
+                <TextBlock Text="Consequences of False Verification:" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Immediate termination of your account" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Loss of access to all discounts and benefits" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Potential legal action for fraud" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Permanent ban from future use of the Services"/>
+                </StackPanel>
+
+                <!-- Section 6 -->
+                <TextBlock Text="6. BUSINESS LISTING TERMS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                    Businesses that wish to list discounts must provide accurate business license and registration information, verify business location and contact information, and comply with all applicable laws and regulations.
+                </TextBlock>
+                <TextBlock Text="When listing discounts, businesses agree to:" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Provide accurate and complete discount terms and conditions" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Honor all stated discount offers for verified users" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Update discount information promptly when terms change" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Train staff on military and first responder verification procedures" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Treat all eligible customers with respect and appreciation" Margin="0,0,0,3"/>
+                </StackPanel>
+
+                <!-- Section 7 -->
+                <TextBlock Text="7. DISCOUNT AND INCENTIVE TERMS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="General Discount Conditions:" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,10">
+                    <TextBlock Text="• Discounts are available only to verified military, veterans, first responders, and families" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Verification may be required at the point of sale" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Discounts cannot be combined with other offers unless specifically stated" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Discounts are subject to availability and may be modified or discontinued" TextWrapping="Wrap"/>
+                </StackPanel>
+                <TextBlock Text="User Responsibilities:" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Present appropriate identification when requested" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Use discounts only for personal, non-commercial purposes" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Not resell or transfer discount benefits to non-eligible individuals" Margin="0,0,0,3"/>
+                </StackPanel>
+
+                <!-- Section 8 -->
+                <TextBlock Text="8. USER GENERATED CONTRIBUTIONS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    The Services may invite you to contribute reviews, comments, and other content. Contributions may be viewable by other users. When you create Contributions, you represent that they do not contain false information about businesses, discount experiences, or service member status.
+                </TextBlock>
+
+                <!-- Section 9 -->
+                <TextBlock Text="9. CONTRIBUTION LICENSE" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    By submitting suggestions, reviews, or other feedback regarding the Services or businesses, you agree that we can use and share such feedback for any purpose without compensation to you. You retain full ownership of all of your Contributions and any intellectual property rights associated with them.
+                </TextBlock>
+
+                <!-- Section 10 -->
+                <TextBlock Text="10. SERVICES MANAGEMENT" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    We reserve the right to monitor the Services for violations of these Legal Terms, take appropriate legal action against violators, restrict access to any of your Contributions, and otherwise manage the Services in a manner designed to protect our rights and property.
+                </TextBlock>
+
+                <!-- Section 11 -->
+                <TextBlock Text="11. TERM AND TERMINATION" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    These Legal Terms shall remain in full force and effect while you use the Services. We may terminate your access to the Services at any time, for any reason, without prior notice or liability. Upon termination, your right to use the Services will cease immediately.
+                </TextBlock>
+
+                <!-- Section 12 -->
+                <TextBlock Text="12. MODIFICATIONS AND INTERRUPTIONS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. We will not be liable to you or any third party for any modification, suspension, or discontinuance of the Services.
+                </TextBlock>
+
+                <!-- Section 13 -->
+                <TextBlock Text="13. GOVERNING LAW" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    These Legal Terms shall be governed by and defined following the laws of the State of Iowa. Doc Bear Enterprises, LLC. and yourself irrevocably consent that the courts of Iowa shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these Legal Terms.
+                </TextBlock>
+
+                <!-- Section 14 -->
+                <TextBlock Text="14. DISPUTE RESOLUTION" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    Any dispute arising out of or in connection with these Legal Terms shall first be attempted to be resolved through good-faith negotiation. If such negotiation fails, the dispute shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association.
+                </TextBlock>
+
+                <!-- Section 15 -->
+                <TextBlock Text="15. CORRECTIONS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.
+                </TextBlock>
+
+                <!-- Section 16 - Disclaimer -->
+                <TextBlock Text="16. DISCLAIMER" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <Border Background="#fff3cd" BorderBrush="#ffc107" BorderThickness="1" Padding="15" CornerRadius="5" Margin="0,0,0,20">
+                    <TextBlock TextWrapping="Wrap" Foreground="#856404">
+                        THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+                    </TextBlock>
+                </Border>
+
+                <!-- Section 17 -->
+                <TextBlock Text="17. LIMITATIONS OF LIABILITY" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES. OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US.
+                </TextBlock>
+
+                <!-- Section 18 -->
+                <TextBlock Text="18. INDEMNIFICATION" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand arising out of your use of the Services, breach of these Legal Terms, or violation of the rights of a third party.
+                </TextBlock>
+
+                <!-- Section 19 -->
+                <TextBlock Text="19. USER DATA" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services.
+                </TextBlock>
+
+                <!-- Section 20 -->
+                <TextBlock Text="20. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically satisfy any legal requirement that such communication be in writing.
+                </TextBlock>
+
+                <!-- Section 21 -->
+                <TextBlock Text="21. MISCELLANEOUS" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    These Legal Terms and any policies or operating rules posted by us on the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law.
+                </TextBlock>
+
+                <!-- Section 22 - Contact -->
+                <TextBlock Text="22. CONTACT US" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                    In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
+                </TextBlock>
+
+                <Border Background="#f8f9fa" Padding="15" CornerRadius="5" Margin="0,0,0,20">
+                    <StackPanel>
+                        <TextBlock Text="Doc Bear Enterprises, LLC." FontWeight="Bold"/>
+                        <TextBlock Text="5249 N Park Pl NE, PMB 4011"/>
+                        <TextBlock Text="Cedar Rapids, IA 52402"/>
+                        <TextBlock Text="United States"/>
+                        <TextBlock Text="Email: privacy@patriotthanks.com"/>
+                        <TextBlock Text="Website: www.docbear-ent.com"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Footer Note -->
+                <Border Background="#f8f9fa" Padding="10" CornerRadius="5">
+                    <TextBlock Text="These terms are specifically tailored for Patriot Thanks and its mission to connect service members with appreciative businesses."
+                               TextWrapping="Wrap" TextAlignment="Center" FontSize="12" Foreground="#666666"/>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer with Close Button -->
+        <Border Grid.Row="2" Background="#f0f0f0" Padding="10">
+            <Button x:Name="btnClose" Content="Close" Width="100" Height="30" 
+                    HorizontalAlignment="Center" Click="btnClose_Click"/>
+        </Border>
+    </Grid>
+</Window>

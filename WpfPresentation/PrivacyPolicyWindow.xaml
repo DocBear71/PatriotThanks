@@ -1,0 +1,254 @@
+﻿<Window x:Class="WpfPresentation.PrivacyPolicyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresentation"
+        mc:Ignorable="d"
+        Title="Privacy Policy - Patriot Thanks" 
+        WindowStartupLocation="CenterScreen" 
+        Height="650" Width="850"
+        MinHeight="450" MinWidth="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#28a745" Padding="15">
+            <StackPanel>
+                <TextBlock Text="PRIVACY POLICY" 
+                           FontSize="24" FontWeight="Bold" 
+                           Foreground="White" 
+                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Last updated August 15, 2025" 
+                           FontSize="12" Foreground="#e8f5e8" 
+                           HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Scrollable Content -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="20">
+            <StackPanel>
+                <!-- Mission Banner -->
+                <Border Background="#e8f5e8" BorderBrush="#28a745" BorderThickness="2" 
+                        CornerRadius="5" Padding="15" Margin="0,0,0,20">
+                    <TextBlock Text="★ USA ★ Connecting veterans, active-duty military, first responders, and their families with local businesses that appreciate their service across the United States."
+                               FontWeight="Bold" Foreground="#155724" TextWrapping="Wrap"/>
+                </Border>
+
+                <!-- Introduction -->
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,15">
+                    <Run>This Privacy Notice for </Run>
+                    <Run FontWeight="Bold">Doc Bear Enterprises, LLC.</Run>
+                    <Run> ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:</Run>
+                </TextBlock>
+
+                <StackPanel Margin="20,0,0,15">
+                    <TextBlock Text="• Visit our website at https://www.patriotthanks.com" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Use our Patriot Thanks application for finding businesses that offer discounts" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Register as a business owner to list your veteran/military/first responder discounts" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• Engage with us in other related ways, including sales, marketing, or events" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    <Run FontWeight="Bold">Questions or concerns?</Run>
+                    <Run> Reading this Privacy Notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at </Run>
+                    <Run FontWeight="Bold">privacy@patriotthanks.com</Run>
+                </TextBlock>
+
+                <!-- Section 1 -->
+                <TextBlock Text="1. WHAT INFORMATION DO WE COLLECT?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock Text="Personal information you disclose to us" FontSize="14" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We collect personal information that you provide to us when using our veteran and first responder discount platform.
+                </TextBlock>
+                <TextBlock Text="Personal Information Provided by You may include:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,10">
+                    <TextBlock Text="• Names, email addresses, usernames, and passwords" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Phone numbers and mailing addresses" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Military service information (branch, service dates, veteran status)" Margin="0,0,0,3"/>
+                    <TextBlock Text="• First responder information (department, role, employment verification)" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Spouse/family member relationship to service member or first responder" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Business information (for business owners listing discounts)" Margin="0,0,0,3"/>
+                </StackPanel>
+                <TextBlock Text="Service Member and First Responder Information:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Military service branch and service dates" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Veteran status and discharge type" Margin="0,0,0,3"/>
+                    <TextBlock Text="• First responder agency and role" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Employment verification for active first responders" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Government-issued ID verification (when necessary)" Margin="0,0,0,3"/>
+                </StackPanel>
+
+                <!-- Section 2 -->
+                <TextBlock Text="2. HOW DO WE PROCESS YOUR INFORMATION?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We process your information to connect veterans, active-duty military, first responders, and their families with businesses that appreciate their service.
+                </TextBlock>
+                <TextBlock Text="We process your personal information for various reasons, including:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• To facilitate account creation and authentication" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To verify military service and first responder status" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To connect you with businesses offering discounts" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To facilitate business listings and verification" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To respond to user inquiries and offer support" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To send administrative information" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To protect our Services and prevent fraud" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• To comply with our legal obligations" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                </StackPanel>
+
+                <!-- Section 3 -->
+                <TextBlock Text="3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We may share information in specific situations described in this section.
+                </TextBlock>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Business Transfers: During mergers, sales, or acquisitions" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• With verification partners: To confirm eligibility for discounts" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• With participating businesses: General statistics only, never individual personal information" TextWrapping="Wrap" Margin="0,0,0,5"/>
+                    <TextBlock Text="• With your consent: For any other purpose with your permission" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 4 -->
+                <TextBlock Text="4. MILITARY AND FIRST RESPONDER VERIFICATION" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We verify military service and first responder status to ensure discount eligibility and maintain trust with participating businesses.
+                </TextBlock>
+                <TextBlock Text="Verification Process:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,10">
+                    <TextBlock Text="• Military Verification: DD-214 documents, military ID cards, or third-party services" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• First Responder Verification: Employment verification, department IDs, credentials" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Family Member Verification: Marriage certificates, dependent ID cards" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Business Verification: Business licenses, registration documents" TextWrapping="Wrap"/>
+                </StackPanel>
+                <TextBlock Text="Data Protection for Service Members:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Verification documents stored in encrypted, secure systems" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Access limited to authorized personnel only" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Compliance with federal regulations for military data" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Sensitive information never shared without explicit consent" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 5 -->
+                <TextBlock Text="5. BUSINESS LISTING AND VERIFICATION" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We help businesses list their veteran and first responder discounts and verify the legitimacy of participating businesses.
+                </TextBlock>
+                <TextBlock Text="Public Business Information includes:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Business name and location" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Types of discounts offered" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Discount terms and conditions" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Business contact information and hours" Margin="0,0,0,3"/>
+                </StackPanel>
+
+                <!-- Section 6 -->
+                <TextBlock Text="6. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We may use cookies and other tracking technologies to collect and store your information.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    We may use cookies and similar tracking technologies (like web beacons and pixels) to gather information when you interact with our Services. Some online tracking technologies help us maintain the security of our Services and your account, prevent crashes, fix bugs, save your preferences, and assist with basic site functions.
+                </TextBlock>
+
+                <!-- Section 7 -->
+                <TextBlock Text="7. HOW LONG DO WE KEEP YOUR INFORMATION?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this Privacy Notice unless otherwise required by law.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                    We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Notice, unless a longer retention period is required or permitted by law. When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    <Run FontWeight="SemiBold">Special Retention for Verification Documents:</Run>
+                    <Run> Military and first responder verification documents are retained only as long as necessary to maintain verification status. These documents are subject to enhanced security measures and are purged according to federal data retention guidelines.</Run>
+                </TextBlock>
+
+                <!-- Section 8 -->
+                <TextBlock Text="8. HOW DO WE KEEP YOUR INFORMATION SAFE?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We aim to protect your personal information through organizational and technical security measures, with enhanced protections for military and first responder data.
+                </TextBlock>
+                <TextBlock Text="Enhanced Security for Service Members:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Enhanced encryption for verification documents and service records" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Restricted access on a need-to-know basis" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Regular security audits and compliance checks" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Secure document destruction procedures" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Compliance with federal security standards" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 9 -->
+                <TextBlock Text="9. DO WE COLLECT INFORMATION FROM MINORS?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: We welcome family members of service members and first responders who are 13 years of age and older. Users under 18 must have verifiable parental consent.
+                </TextBlock>
+                <TextBlock Text="Special Protections for Military Dependents:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,10">
+                    <TextBlock Text="• Parental consent must be provided by the service member parent/guardian" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Limited data collection focused only on discount eligibility" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Enhanced privacy protections for military dependent information" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Parents can monitor and control their dependent's account activity" TextWrapping="Wrap"/>
+                </StackPanel>
+                <TextBlock Text="Parental Rights and Controls:" FontWeight="SemiBold" Margin="0,10,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Review personal information collected from their child" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Request deletion of their child's personal information" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Refuse further collection or use of their child's information" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Control their child's access to discount verification features" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 10 -->
+                <TextBlock Text="10. WHAT ARE YOUR PRIVACY RIGHTS?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" FontStyle="Italic" Margin="0,0,0,10">
+                    In Short: You may review, change, or terminate your account at any time, depending on your state of residence within the United States.
+                </TextBlock>
+                <TextBlock Text="Account Information - You may:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,10">
+                    <TextBlock Text="• Log in to your account settings and update your user account" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Contact us using the contact information provided" TextWrapping="Wrap"/>
+                </StackPanel>
+                <TextBlock Text="Special Rights for Service Members:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                <StackPanel Margin="20,0,0,20">
+                    <TextBlock Text="• Enhanced protections under the Servicemembers Civil Relief Act (SCRA)" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Special consideration for deployment-related service interruptions" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Priority support for account management during active duty" TextWrapping="Wrap" Margin="0,0,0,3"/>
+                    <TextBlock Text="• Expedited verification processing for urgent situations" TextWrapping="Wrap"/>
+                </StackPanel>
+
+                <!-- Section 11 - Contact -->
+                <TextBlock Text="11. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,10">
+                    If you have questions or comments about this notice, you may email us at privacy@patriotthanks.com or contact us by post at:
+                </TextBlock>
+
+                <Border Background="#f8f9fa" Padding="15" CornerRadius="5" Margin="0,0,0,20">
+                    <StackPanel>
+                        <TextBlock Text="Doc Bear Enterprises, LLC." FontWeight="Bold"/>
+                        <TextBlock Text="5249 N Park Pl NE, PMB 4011"/>
+                        <TextBlock Text="Cedar Rapids, IA 52402"/>
+                        <TextBlock Text="United States"/>
+                        <TextBlock Text="Phone: (319) 826-3463"/>
+                        <TextBlock Text="Email: privacy@patriotthanks.com"/>
+                        <TextBlock Text="Website: www.docbear-ent.com"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Footer Note -->
+                <Border Background="#f8f9fa" Padding="10" CornerRadius="5">
+                    <TextBlock Text="This privacy policy is specifically tailored for Patriot Thanks - connecting veterans, active-duty military, first responders, and their families with businesses that appreciate their service across the United States."
+                               TextWrapping="Wrap" TextAlignment="Center" FontSize="12" Foreground="#666666"/>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Footer with Close Button -->
+        <Border Grid.Row="2" Background="#f0f0f0" Padding="10">
+            <Button x:Name="btnClose" Content="Close" Width="100" Height="30" 
+                    HorizontalAlignment="Center" Click="btnClose_Click"/>
+        </Border>
+    </Grid>
+</Window>
